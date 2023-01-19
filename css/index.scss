@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap");
 
-body {
-  margin: 0;
-}
+@import "./partials/reset";
 @import "./partials/variables";
+@import "./partials/container";
 @import "./partials/nav";
 @import "./partials/banner";
+@import "./partials/card";
+
+@mixin main-layout($layout) {
+  @if $layout== "dark" {
+    background-color: #004b23;
+  } @else {
+    background-color: white;
+  }
+}
+body {
+  @include main-layout("dark");
+}

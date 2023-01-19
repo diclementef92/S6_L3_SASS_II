@@ -3,12 +3,28 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 2vh auto 2vh auto;
+}
+.container > div {
+  display: flex;
+  flex-direction: column;
+}
 nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(154, 191, 0);
   padding: 5px;
   font-family: "Comfortaa", cursive;
+}
+nav > div {
+  display: flex;
 }
 nav ul {
   list-style-type: none;
@@ -19,12 +35,21 @@ nav ul {
 nav ul li {
   margin-right: 10px;
 }
+nav ul li a {
+  color: rgb(63, 63, 63);
+}
 nav img {
   height: 50px;
 }
+nav button.dark-theme {
+  background-color: #007f5f;
+  border-width: 0;
+  border-radius: 5px;
+  color: white;
+}
 
 .banner {
-  height: 30vh;
+  height: 40vh;
   background-color: rgba(153, 191, 0, 0.504);
   background-image: url("../img/");
   display: flex;
@@ -46,4 +71,40 @@ nav img {
 .banner button:hover {
   box-shadow: 0px 0px 4px 1px grey;
   transform: scale(1.1);
+}
+
+.card, .card-3, .card-2, .card-1 {
+  color: rgb(63, 63, 63);
+  font-family: "Comfortaa", cursive;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(153, 191, 0, 0.504);
+  margin: 10px;
+  border: 1px solid green;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+.card:hover, .card-3:hover, .card-2:hover, .card-1:hover {
+  transform: scale(1.1);
+}
+.card img, .card-3 img, .card-2 img, .card-1 img {
+  height: 100%;
+}
+
+.card-1 p {
+  font-size: calc(1em + 1em / 10);
+}
+
+.card-2 p {
+  font-size: calc(1em + 2em / 10);
+}
+
+.card-3 p {
+  font-size: calc(1em + 3em / 10);
+}
+
+body {
+  background-color: #004b23;
 }/*# sourceMappingURL=index.css.map */
