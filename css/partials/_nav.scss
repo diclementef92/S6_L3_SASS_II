@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  align-items: center;
+  background-color: $nav-bg-color;
+  padding: 5px;
+  font: {
+    family: $nav-font;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-left: $margin-nav;
+
+    li {
+      margin-right: $margin-nav-items;
+    }
+  }
+  img {
+    height: $logo-height;
+  }
+}

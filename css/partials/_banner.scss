@@ -1,0 +1,25 @@
+.banner {
+  height: $banner-height;
+  background-color: $banner-bg-color;
+  background-image: url("../img/");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $banner-font;
+  button {
+    background-color: $btn-bg-color;
+    color: $text-color;
+    border-width: 0;
+    border-radius: $btn-border-radius;
+    padding: $btn-padding;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    box-shadow: 2px 2px 4px 0px grey;
+
+    &:hover {
+      box-shadow: 0px 0px 4px 1px grey;
+      transform: scale(1.1);
+    }
+  }
+}
