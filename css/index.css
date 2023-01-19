@@ -13,7 +13,7 @@ a {
 }
 .container > div {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 nav {
   display: flex;
